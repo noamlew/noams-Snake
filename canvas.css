@@ -1,0 +1,96 @@
+body {
+    background: url(https://www.pngjoy.com/pngm/295/5589964_snake-logo-snake-counting-game-png-download.png) repeat 50%;
+}
+
+#gameScreen {
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEasJ-lH0K_jf17vDADBYr9fZldHAYUWQI8w&usqp=CAU);
+}
+
+#canvasDiv {
+    width: 50px;
+    height: 50px;
+}
+
+#messageDiv {
+    background-color: rgb(19, 52, 78);
+    width: 500px;
+    height: 180px;
+    float: right;
+    margin: 100px;
+}
+
+#messageP {
+    font-size: 45px;
+    color: blanchedalmond;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#recordButton {
+    margin-top: 60px;
+    margin-left: 5px;
+    display: flex;
+    width: 70px;
+    height: 30px;
+}
+
+#wicheLevel, #machzor {
+    font-size: 30px;
+    color: white;
+    display: true;
+}
+
+#fromTag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hideAudio {
+    display: none;
+}
+
+#snakeLogo {
+    float: left;
+    margin-top: 130px;
+    width: 100%;
+    height: 200px;
+}
+
+#levelButton {
+    height: 30px;
+    width: 130px;
+    float: right;
+    margin-top: 10px;
+    display: grid;
+
+}
+
+.hideFrom {
+    display: none;
+}
+
+.CHEATING {
+    color: white;
+    display: none;
+}
+
+#recordBack {
+    display: none;
+    width: 70px;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+#recordReset {
+    display: none;
+    width: 70px;
+    height: 30px;
+    margin-top: -30px;
+    margin-left: 80px;
+}

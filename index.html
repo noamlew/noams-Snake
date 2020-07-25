@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE</title>
+    <link rel="icon" href="https://www.pngjoy.com/pngm/295/5589964_snake-logo-snake-counting-game-png-download.png">
+    <link href="canvas.css" rel="styleSheet">
+</head>
+<body>
+    <div id="messageDiv">
+        <p id="messageP"></p>
+        <form id="fromTag">
+            <table>
+                <tr>
+                    <td><label id="wicheLevel">איזה רמת קושי אתה רוצה?</label></td>
+                    <td><input type="range" id="range"></td>
+                </tr>
+                <tr>
+                    <td><label class="hideFrom" id="machzor">מה יש לך לומר על מחזור נו בישל"צ?</label></td>
+                    <td><input class="hideFrom" type="text" id="nv"></td>
+                </tr>
+                <tr class="CHEATING">
+                    <td><label>איזה מהירות אתה רוצה?</label></td>
+                    <td><input type="number" id="speedC"></td>
+                </tr>
+                <tr class="CHEATING">
+                    <td><label>כמה הנחש יגדל כל פעם</label></td>
+                    <td><input type="number" id="bigC"></td>
+                </tr>
+                <tr class="CHEATING">
+                    <td><label>אפשר להפסיד?</label></td>
+                    <td><select id="loseC">
+                        <option value='yes'>כן</option>
+                        <option value="no">לא</option>
+                    </select>
+                </tr>
+                <tr>
+                    <td><button id="levelButton" type="button">enter</button></td>
+                    <td><button id="cheating" type="button">רוצה לרמות?</button></td>
+                </tr>
+            </table>
+        </form>
+        <button id="recordButton" type="button">records</button>
+        <button id="recordBack" type="button">back</button>
+        <button id="recordReset" type="button">Reset</button>
+    </div>
+    <div id="canvasDiv">
+        <canvas id="gameScreen"></canvas>
+    </div>
+    <audio id="audio" class="hideAudio" controls>
+        <source src="audio/Sneaky Snitch (Kevin MacLeod) - Gaming Background Music (HD).mp3">
+    </audio>
+    <audio id="eatAudio" class="hideAudio" controls>
+        <source src="audio/Apple Crunch Sound Effect-[AudioTrimmer.com]-[AudioTrimmer.com].mp3">
+    </audio>
+    <audio id="endAudio" class="hideAudio" controls>
+        <source src="audio/The Price is Right Losing Horn - Gaming Sound Effect (HD).mp3">
+    </audio>
+    <audio id="barp" class="hideAudio" controls>
+        <source src="audio/Burp - Sound effect (mp3cut.net).mp3">
+    </audio>
+    <img src="https://www.thatsoftwaredude.com/images/post/snake-game-clone.png" id="snakeLogo">
+</body>
+<script src="canvas.js"></script>
+</html>
